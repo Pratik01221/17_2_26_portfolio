@@ -56,16 +56,7 @@ const right = {
   color: "var(--subtext)"
 };
 
-const toggle = {
-  width: "42px",
-  height: "42px",
-  borderRadius: "50%",
-  border: "1px solid var(--accent)",
-  background: "transparent",
-  color: "var(--accent)",
-  cursor: "pointer",
-  fontSize: "18px"
-};
+
 
 const themeButton = {
   display: "flex",
