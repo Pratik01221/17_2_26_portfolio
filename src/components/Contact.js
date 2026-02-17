@@ -6,7 +6,7 @@ export default function Contact() {
       <a href="mailto:pratikgarad9822@gmail.com" target="blank" style={textStyle}>Send me an email</a>
       <p style={emailStyle}>Email: pratikgarad9822@gmail.com</p>
       <p style={emailStyle}>GitHub: github.com/pratikgarad</p>
-      {/* <a href="https://github.com/pratik01221" target="blank" rel="noopener noreferrer" style={textStyle}>GitHub Profile</a> */}
+      <a href="https://github.com/pratik01221" target="blank" rel="noopener noreferrer" style={textStyle}>GitHub Profile</a>
     </section>
   );
 }
