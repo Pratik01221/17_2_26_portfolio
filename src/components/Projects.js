@@ -4,6 +4,8 @@ import portfolio from "../assets/Portfolio.png";
 import Quicktask_img from  "../assets/QuickTask_img.png"
 import codingyodhha from  "../assets/coding_yoddha_img.png"
 import Inotebook_img from  "../assets/Inotebook_img.png"
+import Expert from  "../assets/Expert_img.png"
+ 
 export default function Projects() {
   return (
     <section className="featured-projects">
@@ -59,8 +61,22 @@ export default function Projects() {
           </div>
         </div>
 
-      </div>
-      <div className="projects-grid">
+      {/* </div>
+      <div className="projects-grid"> */}
+      <div className="project-box">
+          <img src={Expert} alt="Expert Mnagement System...." />
+
+          <div className="project-info">
+            <h3>Expert Management System</h3>
+            <a 
+              href="https://expert-managemet-frontend.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </div>
 
         <div className="project-box">
           <img src={Quicktask_img} alt="QuickTask...." />
