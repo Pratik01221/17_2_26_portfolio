@@ -29,6 +29,7 @@ function handleSubmit(e) {
   const message = formData.get('message');
   
   // For now, just log or alert. In real app, send to backend
+  console.log('Form submitted:', { name, email, message });
   alert(`Thank you ${name}! Your message has been sent.`);
   e.target.reset();
 }
