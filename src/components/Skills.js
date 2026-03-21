@@ -51,7 +51,7 @@ const section = {
 const title = {
   fontSize: "2.5rem",
   marginBottom: "60px",
-  color: "#c7d2fe"
+  color: "var(--skills-title)"
 };
 
 const grid = {
@@ -78,12 +78,12 @@ const card = {
 const iconStyle = {
   fontSize: "42px",
   marginBottom: "12px",
-  color: "#ffffff"
+  color: "var(--skills-icon)"
 };
 
 
 const text = {
-  color: "#e5e7eb",
+  color: "var(--skills-text)",
   fontSize: "14px"
 };
 

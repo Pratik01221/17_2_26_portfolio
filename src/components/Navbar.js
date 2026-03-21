@@ -9,14 +9,15 @@ export default function Navbar() {
 
   return (
     <nav style={nav}>
-      <h3 style={{ color: "white" ,fontSize: "1.5rem",
+      <h3 style={{ color: "var(--text)" ,fontSize: "1.5rem",
   fontWeight: "300"}}>Portfolio Website</h3>
 
       <div style={right}>
-        <a href="#home">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</a>
+        <a href="#about" onClick={(e) => { e.preventDefault(); document.getElementById('about').scrollIntoView({ behavior: 'smooth' }); }}>About</a>
+        <a href="#skills" onClick={(e) => { e.preventDefault(); document.getElementById('skills').scrollIntoView({ behavior: 'smooth' }); }}>Skills</a>
+        <a href="#projects" onClick={(e) => { e.preventDefault(); document.getElementById('projects').scrollIntoView({ behavior: 'smooth' }); }}>Projects</a>
+        <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Contact</a>
 
         
  

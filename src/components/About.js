@@ -44,7 +44,7 @@ const aboutSection = {
 };
 
 const card = {
-  background: "rgba(255,255,255,0.04)",
+  background: "var(--card)",
   backdropFilter: "blur(12px)",
   padding: "35px",
   borderRadius: "16px",
@@ -56,25 +56,25 @@ const centerCard = {
 };
 
 const smallTitle = {
-  color: "#2dd4bf",
+  color: "var(--accent)",
   marginBottom: "15px",
   fontSize: "18px"
 };
 
 const text = {
-  color: "#cbd5f5",
+  color: "var(--subtext)",
   lineHeight: "1.7"
 };
 
 const quote = {
   fontSize: "2.2rem",
-  color: "#93c5fd",
+  color: "var(--hero-name)",
   lineHeight: "1.3"
 };
 
 const list = {
   listStyle: "none",
   padding: 0,
-  color: "#cbd5f5",
+  color: "var(--subtext)",
   lineHeight: "2"
 };

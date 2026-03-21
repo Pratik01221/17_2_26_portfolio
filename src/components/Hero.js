@@ -2,7 +2,7 @@ import profile from "../assets/profile.jpg";
 
 export default function Hero() {
   return (
-    <section style={hero}>
+    <section style={hero} id="home">
       
       {/* LEFT IMAGE */}
       <div>
@@ -11,7 +11,7 @@ export default function Hero() {
 
       {/* RIGHT CONTENT */}
       <div style={content}>
-        <p style={{ color: "#2dd4bf" }}>Hi, my name is</p>
+        <p style={{ color: "var(--accent)" }}>Hi, my name is</p>
 
         <h1 style={name}>Pratik Garad</h1>
 
@@ -24,7 +24,7 @@ export default function Hero() {
         </p>
 
         <div style={{ display: "flex", gap: "20px", marginTop: "30px" }}>
-          <button style={primaryBtn}>Check out my work!</button>
+          <button style={primaryBtn} onClick={() => window.scrollTo({ top: document.getElementById('projects').offsetTop, behavior: 'smooth' })}>Check out my work!</button>
           <a href="/resume.pdf" download style={{ textDecoration: "none" }}>
   <button style={secondaryBtn}>Download Resume</button>
 </a>
@@ -59,26 +59,26 @@ const content = {
 const name = {
   fontSize: "4rem",
   fontWeight: "700",
-  color: "#93c5fd",
+  color: "var(--hero-name)",
   margin: "10px 0"
 };
 
 const tagline = {
   fontSize: "2.2rem",
-  color: "#94a3b8",
+  color: "var(--hero-tagline)",
   marginBottom: "20px"
 };
 
 const desc = {
-  color: "#94a3b8",
+  color: "var(--hero-desc)",
   lineHeight: "1.7"
 };
 
 const primaryBtn = {
   padding: "14px 28px",
   background: "transparent",
-  border: "2px solid #2dd4bf",
-  color: "#2dd4bf",
+  border: "2px solid var(--btn-primary)",
+  color: "var(--btn-primary)",
   borderRadius: "8px",
   fontSize: "16px",
   cursor: "pointer"
@@ -86,9 +86,9 @@ const primaryBtn = {
 
 const secondaryBtn = {
   padding: "14px 28px",
-  background: "#020617",
-  border: "2px solid #94a3b8",
-  color: "#e5e7eb",
+  background: "var(--btn-secondary-bg)",
+  border: "2px solid var(--btn-secondary-border)",
+  color: "var(--btn-secondary-text)",
   borderRadius: "8px",
   fontSize: "16px",
   cursor: "pointer"

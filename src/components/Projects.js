@@ -8,7 +8,7 @@ import Expert from  "../assets/Expert_img.png"
  
 export default function Projects() {
   return (
-    <section className="featured-projects">
+    <section className="featured-projects" id="projects">
       <h2 className="featured-title">Featured Projects</h2>
 
       <div className="projects-grid">

@@ -3,10 +3,31 @@
 :root {
   --bg: #020617;
   --bg-gradient: linear-gradient(180deg, #020617, #020b2e);
-  --text: #04070b;
+  --text: #ffffff;
   --subtext: #cbd5f5;
   --accent: #38bdf8;
   --card: rgba(255,255,255,0.04);
+  --card-bg: #0b1b36;
+  --card-info-bg: #10223f;
+  --project-title: #eaf0ff;
+  --link: #4f7cff;
+  --link-hover: #9bb0ff;
+  --hero-name: #93c5fd;
+  --hero-tagline: #94a3b8;
+  --hero-desc: #94a3b8;
+  --btn-primary: #2dd4bf;
+  --btn-secondary-bg: #020617;
+  --btn-secondary-border: #94a3b8;
+  --btn-secondary-text: #e5e7eb;
+  --skills-title: #c7d2fe;
+  --skills-icon: #ffffff;
+  --skills-text: #e5e7eb;
+  --contact-email: #93C5FD;
+  --contact-text: #ffffff;
+  --footer-text: #94a3b8;
+  --nav-bg: rgba(2, 6, 23, 0.9);
+  --nav-link: #000000;
+  --nav-link-hover: #38bdf8;
 }
 
 .light {
@@ -16,6 +37,27 @@
   --subtext: #334155;
   --accent: #5c6b8b;
   --card: rgba(0,0,0,0.06);
+  --card-bg: #ffffff;
+  --card-info-bg: #f1f5f9;
+  --project-title: #1e293b;
+  --link: #2563eb;
+  --link-hover: #1d4ed8;
+  --hero-name: #1e40af;
+  --hero-tagline: #475569;
+  --hero-desc: #64748b;
+  --btn-primary: #06b6d4;
+  --btn-secondary-bg: #f8fafc;
+  --btn-secondary-border: #cbd5e1;
+  --btn-secondary-text: #374151;
+  --skills-title: #374151;
+  --skills-icon: #1f2937;
+  --skills-text: #4b5563;
+  --contact-email: #2563eb;
+  --contact-text: #1f2937;
+  --footer-text: #64748b;
+  --nav-bg: rgba(248, 250, 252, 0.9);
+  --nav-link: #1f2937;
+  --nav-link-hover: #06b6d4;
 }
 
 body {
@@ -58,7 +100,7 @@ nav {
   top: 0;
   width: 100%;
   padding: 18px 10%;
-  background: rgba(2, 6, 23, 0.9);
+  background: var(--nav-bg);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -67,25 +109,36 @@ nav {
 
 nav a {
   margin-left: 25px;
-  color: #000000;
+  color: var(--nav-link);
   text-decoration: none;
   font-size: 18px;
-  bold: 500;
+  font-weight: 500;
 }
 
 nav a:hover {
-  color: #38bdf8;
+  color: var(--nav-link-hover);
 }
 
 footer {
   text-align: center;
   padding: 40px;
-  color: #94a3b8;
+  color: var(--footer-text);
 }
 
-#skills div:hover {
-  transform: translateY(-1px) scale(1.03);
-  box-shadow: 0 0 10pxpx rgba(56,189,248,0.35);
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease-out;
 }
 
 
@@ -93,7 +146,7 @@ footer {
 /*  Project */
 
 .featured-projects {
-  background: radial-gradient(circle at top, #06163a, #020923);
+  background: var(--bg);
   padding: 90px 8%;
 }
 
@@ -101,7 +154,7 @@ footer {
   text-align: center;
   font-size: 42px;
   font-weight: 600;
-  color: #fff;
+  color: var(--text);
   margin-bottom: 60px;
 }
 
@@ -112,7 +165,7 @@ footer {
 }
 
 .project-box {
-  background: #0b1b36;
+  background: var(--card-bg);
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.35s ease;
@@ -131,22 +184,22 @@ footer {
 
 .project-info {
   padding: 26px;
-  background: #10223f;
+  background: var(--card-info-bg);
 }
 
 .project-info h3 {
-  color: #eaf0ff;
+  color: var(--project-title);
   font-size: 22px;
   margin-bottom: 14px;
 }
 
 .project-info a {
-  color: #4f7cff;
+  color: var(--link);
   font-weight: 500;
   text-decoration: underline;
   transition: 0.3s;
 }
 
-.project-info a:hover {
-  color: #9bb0ff;
+.testimonial-card:hover {
+  transform: translateY(-5px);
 }
